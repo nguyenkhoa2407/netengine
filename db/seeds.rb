@@ -12,7 +12,7 @@ tasks = [
   { title: 'Call references', subtitle: 'Job: NetEngine - Fullstack Engineer', priority: 'high', due_date: 10.days.from_now },
   { title: 'Finish OMSCS application', subtitle: 'Profile, transcript, and cover letter', priority: 'medium', due_date: 30.days.from_now },
   { title: 'Buy birthday gifts', subtitle: "Alex's birthday, no books and no flowers", priority: 'low', due_date: 2.months.from_now },
-  { title: 'Buy detergent', subtitle: 'Downy, family size', priority: 'low', due_date: 1.week.from_now },
+  { title: 'Ask candidates about driver licenses and blue card', subtitle: 'Job ABC123XYZ - Aboriginal family partnership worker', priority: 'low', due_date: 1.week.from_now },
 ]
 
 for task in tasks
