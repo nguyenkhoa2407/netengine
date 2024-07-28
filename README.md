@@ -17,6 +17,10 @@ Then, you need to set up the database. Run all pending migrations with:
 ```bash
 rails db:migate
 ```
+Seed the database:
+```bash
+rails db:seed
+```
 Start the server:
 ```bash
 bin/rails server 
