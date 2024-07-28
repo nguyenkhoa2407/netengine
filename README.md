@@ -17,7 +17,8 @@ Then, you need to set up the database. Run all pending migrations with:
 ```bash
 rails db:migate
 ```
-Finally, to start the server:
+Start the server:
 ```bash
 bin/rails server 
 ```
+Finally, go to `localhost:3000` for the task list. 
