@@ -1,24 +1,23 @@
-# README
+# Requirements:
+You would need the following on the machine to run the project:
+- Ruby 2.7.0 or later
+- SQLite3
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Most UNIX-like operating systems have SQLite3 pre-installed, if yours doesn't, You can find the installation instructions at https://www.sqlite.org/. You can verify your installation by running: 
+```bash
+sqlite3 --version
+```
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Starting the application
+First, install the dependencies
+```bash
+bundle install
+```
+Then, you need to set up the database. Run all pending migrations with:
+```bash
+rails db:migate
+```
+Finally, to start the server:
+```bash
+bin/rails server 
+```
