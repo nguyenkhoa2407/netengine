@@ -5,6 +5,7 @@ class CreateTasks < ActiveRecord::Migration[7.1]
       t.text :subtitle, null: true
       t.string :priority, default: 'low', null: false
       t.datetime :due_date, null: true
+      t.boolean :completed, default: false, null: false
       t.timestamps
     end
   end

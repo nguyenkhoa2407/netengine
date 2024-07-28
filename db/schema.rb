@@ -16,6 +16,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_07_28_040443) do
     t.text "subtitle"
     t.string "priority", default: "low", null: false
     t.datetime "due_date"
+    t.boolean "completed", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
