@@ -1,0 +1,12 @@
+<h1>Tasks</h1>
+
+<ul>
+  <% @tasks.each do |task| %>
+    <li>
+      <%= task.title %>
+      <%= task.subtitle %>
+      <%= "#{task.priority.upcase} PRIORITY" %>
+      <%= task.due_date %>
+    </li>
+  <% end %>
+</ul>

@@ -1,3 +1,3 @@
 class Task < ApplicationRecord
-  enum priority: [ :low, :medium, :high ]
+  enum priority: { low: 'low', medium: 'medium', high: 'high' }
 end
