@@ -5,8 +5,18 @@ class TasksController < ApplicationController
 
   def update
     @task = Task.find(params[:id])
-    @task.update(task_params)
-    redirect_to tasks_path
+
+    if @task.update(task_params)
+      respond_to do |format|
+        format.html 
+        format.json { render json: @task, status: :ok }
+      end
+    else
+      respond_to do |format|
+        format.html
+        format.json { render json: @task.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   private
