@@ -26,3 +26,6 @@ Start the server:
 bin/rails server 
 ```
 Finally, go to `localhost:3000` for the task list. 
+
+# Demo video
+https://www.loom.com/share/38dba46f9e9543cc950d7f9118dfc533
