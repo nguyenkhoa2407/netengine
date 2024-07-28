@@ -17,7 +17,7 @@ Then, you need to set up the database. Run all pending migrations with:
 ```bash
 rails db:migate
 ```
-Seed the database:
+Seed the database (you can reseed the database after completing tasks to reset the data):
 ```bash
 rails db:seed
 ```
